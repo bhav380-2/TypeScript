@@ -72,6 +72,32 @@ function getFood(pet: Fish | Bird){
 }
 
 
+//____________ Discriminated Unions____________________
+
+interface Circle{
+    kind:"circle",
+    radius: number
+}
+interface Square{
+    kind:"square"
+    side : number
+}
+
+interface Rectangle{
+    kind : "rectangle",
+    length: number,
+    width: number
+}
+
+type Shape = Circle | Square
+
+function  getTrueShape(shape:Shape){
+    if(shape.kind==="circle"){
+        return Math.PI * shape.radius;
+    }
+    return shape.side *shape.side;
+}
+
 
 
 
