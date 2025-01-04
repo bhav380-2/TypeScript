@@ -12,3 +12,14 @@ function identity(val) {
     return val;
 }
 identity({ brand: "new", type: 1 });
+// ______________________________________________________________
+function getSearchProducts(products) {
+    // do some db operations
+    const myIndex = 3;
+    return products[myIndex];
+}
+const getSearchProducts2 = (products) => {
+    // do some database operations
+    const myIndex = 3;
+    return products[myIndex];
+};

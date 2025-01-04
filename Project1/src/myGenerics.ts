@@ -22,3 +22,19 @@ interface Bottle{
 }
 
 identity<Bottle>({brand:"new",type:1})
+
+// ______________________________________________________________
+
+function getSearchProducts<T>(products:T[]):T{
+    // do some db operations
+    const myIndex = 3;
+    return products[myIndex]
+}
+
+
+const getSearchProducts2 = <T,>(products:T[]):T=>{
+    // do some database operations
+    const myIndex = 3
+    return products[myIndex]
+
+}
