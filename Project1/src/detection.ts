@@ -31,3 +31,34 @@ function isAdminAccount(account:User|Admin){
         return account.isAdmin
     }
 }
+
+
+// _____________instanceOf_____________________
+
+function logValue(x: Date | string){
+    if(x instanceof Date){
+        console.log(x.toUTCString());
+    }else{
+        console.log(x.toUpperCase());
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
