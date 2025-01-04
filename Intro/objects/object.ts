@@ -22,16 +22,50 @@
 
 //type alias
 
+// type User = {
+//     name:string;
+//     email:string;
+//     isActive:boolean
+// }
+
+// function createUser(user:User):User{
+//     return {name:"hi",email:"123.com",isActive:true}
+// }
+
+// createUser({name:"",email:"",isActive:true})
+
 type User = {
-    name:string;
-    email:string;
-    isActive:boolean
+    readonly _id:string
+    name : string,
+    email : string,
+    isActive : boolean,
+    credcardDetails?: number
 }
 
-function createUser(user:User):User{
-    return {name:"hi",email:"123.com",isActive:true}
+// function createUser(u:User){
+
+// }
+
+type cardNumber = {
+    cardnumber : string
 }
 
-createUser({name:"",email:"",isActive:true})
+type cardDate = {
+    cardDate : string
+
+}
+
+type  cardDetails = cardNumber & cardDate & {
+    cvv : number
+}
+
+let myUser : User = {
+    _id : "1245",
+    name: "H",
+    email : "h@h.com",
+    isActive : false
+}
+myUser.email = "hnew@gmail.com"
+// myUser._id = "HI"
 
 export {}
