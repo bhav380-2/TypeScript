@@ -23,3 +23,18 @@ const getSearchProducts2 = (products) => {
     const myIndex = 3;
     return products[myIndex];
 };
+// ______________________________________________________________
+function anotherFunction(valOne, valTwo) {
+    return {
+        valOne,
+        valTwo
+    };
+}
+class Sellable {
+    constructor() {
+        this.cart = [];
+    }
+    addToCart(product) {
+        this.cart.push(product);
+    }
+}
